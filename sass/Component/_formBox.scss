@@ -1,0 +1,57 @@
+.formBox {
+    min-width: 60%;
+    form {
+        display: flex;
+        flex-direction: column;
+        input,
+        textarea {
+            margin-bottom: 10px;
+            // padding: 15px;
+            // font-size: $fs-0;
+            border: none;
+            outline: none;
+            // background: white;
+            // color: white;
+            resize: none;
+            position: relative;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0 20px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2px);
+            &::placeholder {
+                color: white;
+                opacity: 1;
+            }
+            &:focus{
+                background: $color-white;
+                color: $color-black;
+                &::placeholder{
+                    color: $color-background;
+                }
+
+            }
+        }
+        input[type="submit"] {
+            max-width: 120px;
+            color:  $color-background;
+            background: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 2px;
+            &:hover {
+                color: white;
+                background: $color-background;
+            }
+        }
+        textarea {
+            min-height: 150px;
+
+        }
+    }
+}

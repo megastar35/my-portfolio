@@ -1,0 +1,18 @@
+#portfolio {
+     background: url("../../assets/img/wave2_bg.png") no-repeat;
+    .heading {
+        color: $color-white;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    .portfolio_content {
+        position: relative;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+

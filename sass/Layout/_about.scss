@@ -1,0 +1,16 @@
+#about{
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+    
+        .imgBox{
+            img{
+                width: 370px;
+            }
+        }
+    }
+}

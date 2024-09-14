@@ -1,0 +1,27 @@
+.scrollTop {
+    position: fixed;
+
+    right: 20px;
+    bottom: 50px;
+    cursor: pointer;
+    // background-size: 40px;
+    // background-position: center;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    i {
+        background-color: white;
+        border-radius: 50%;
+        padding: 18px 20px;
+        // height: 20px;
+        // width: 20px;
+        box-shadow: 7px 7px 22px -5px rgba(0, 0, 0, 0.72);
+        -webkit-box-shadow: 7px 7px 22px -5px rgba(0, 0, 0, 0.72);
+        -moz-box-shadow: 7px 7px 22px -5px rgba(0, 0, 0, 0.72);
+    }
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}

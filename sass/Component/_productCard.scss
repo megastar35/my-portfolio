@@ -1,0 +1,97 @@
+.productCard {
+    height: 80%;
+    // width: 100%;
+    // margin-bottom: 20px;
+    // background: $color-white;
+    display: flex;
+    justify-content: center;
+    .card_img {
+        position: relative;
+        width: 60%;
+        border: 2px solid $color-blue-2;
+        border-radius: 20px;
+
+        box-shadow: -1px 16px 19px -14px rgba(0, 0, 0, 0.47);
+        -webkit-box-shadow: -1px 16px 19px -14px rgba(0, 0, 0, 0.47);
+        -moz-box-shadow: -1px 16px 19px -14px rgba(0, 0, 0, 0.47);
+    }
+    &#product1 .card_img {
+        background: url(../../assets/img/bookingmovieticket_page.PNG) no-repeat center top;
+        background-size: cover;
+    }
+    &#product2 .card_img {
+        background: url(../../assets/img/porfolio_page.PNG) no-repeat center right;
+        background-size: cover ;
+    }
+    .card_detail {
+        position: absolute;
+        left: 5%;
+        bottom: -15%;
+        padding: 20px;
+        width: 40%;
+        background: $color-white;
+        border: 2px solid $color-blue-2;
+        border-radius: 20px;
+        box-shadow: -1px 16px 19px -14px rgba(0, 0, 0, 0.47);
+        -webkit-box-shadow: -1px 16px 19px -14px rgba(0, 0, 0, 0.47);
+        -moz-box-shadow: -1px 16px 19px -14px rgba(0, 0, 0, 0.47);
+        .title {
+            font-weight: $fw-bold;
+            font-size: $fs-2;
+            color: $color-blue-2;
+        }
+        p {
+            display: flex;
+            margin-bottom: 5px;
+            span {
+                color: $color-blue-1;
+            }
+        }
+        .detail_title {
+            margin-right: 5px;
+            color: $color-blue-2;
+            font-weight: $fw-bold;
+        }
+        .btn {
+            margin-top: 30px;
+            border: 20px;
+            background-color: var(--clr);
+            text-transform: capitalize;
+            a {
+                color: $color-white;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@include Responsive(SM) {
+    .productCard {
+        .card_img {
+            width: 80%;
+            height: 70%;
+        }
+        .card_detail {
+            padding: 10px;
+            width: 70%;
+            bottom: -10%;
+            left: 50%;
+            transform: translate(-50%);
+
+            .title {
+                font-size: $fs-0 - 4;
+                margin-top: 0;
+            }
+            p {
+                display: flex;
+                flex-direction: column;
+                font-size: $fs-0 - 4;
+            }
+
+            .btn {
+                margin-top: 10px;
+                font-size: $fs-0 - 4;
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+#home {
+    padding: 80px 0 0;
+    .container {
+        width: 80%;
+        margin: auto;
+        height: 100%;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        .home_data {
+            display: block;
+            margin-right: 15px;
+            padding: 5px 10px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: $color-blue-1;
+            h2 {
+                font-size: $fs-3;
+                font-weight: $fw-bold-0;
+                line-height: 1.5em;
+            }
+            h1 {
+                margin-top: 0;
+                font-size: $fs-2;
+            }
+            .home_description {
+                position: relative;
+                font-size: $fs-1;
+                color: $color-blue-1;
+                word-wrap: break-word;
+                margin-top: 15px;
+            }
+            .btn {
+                background-color: $color-blue-2;
+                border-radius: 0.5rem;
+                font-weight: bold;
+                text-decoration: none;
+                margin: 20px 0;
+
+                a {
+                    color: $color-blue-3;
+                }
+            }
+        }
+        .right_content {
+            position: relative;
+            height: 100%;
+            padding: 20px 40px;
+            background: $color-blue-2;
+            color: $color-white;
+            .image {
+                overflow: hidden;
+                text-align: center;
+                border-radius: 50%;
+                border: 5px solid $color-white;
+                img {
+                    height: 350px;
+                    width: 350px;
+                }
+            }
+            .contact_info {
+                h3 {
+                    text-align: center;
+                    font-size: $fs-2;
+                    margin: 15px 0;
+                }
+                ul li {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    border-bottom: 1px solid $color-blue-1;
+                    padding-top: 20px;
+                    .info_icon {
+                        // background: $color-blue-2;
+                        color: $color-white;
+                        line-height: 1.5;
+                        margin-right: 10px;
+                        width: 7rem;
+                        border-radius: 2px 2px 0 0;
+                    }
+                    i {
+                        color: $color-blue-1;
+                    }
+                    &:first-child {
+                        padding: 0;
+                    }
+                }
+            }
+            .social_content {
+                margin: 30px 0;
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    li {
+                        margin-right: 20px;
+                        text-align: center;
+                        position: relative;
+                        a {
+                            line-height: 40px;
+                            display: inline-block;
+                            background: $color-red-0;
+                            color: $color-white;
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 50%;
+                        }
+                        .tooltip {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 10px 8px;
+                            font-size: $fs-0 - 4;
+                            background-color: transparent;
+                            border-radius: 20px;
+                            color: #fff;
+                            text-align: center;
+                            height: 36px;
+                            width: 100px;
+                            opacity: 0;
+                            left: -30px;
+                            top: 0;
+                            pointer-events: none;
+                            visibility: hidden;
+                            background-color: #323232;
+                            transition: all 0.3s;
+                        }
+                        &:hover {
+                            a {
+                                background: var(--clr);
+                            }
+                            .tooltip {
+                                transform: translate(0, 130%);
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include Responsive(MD) {
+    #home {
+        padding: 30px 0 0;
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

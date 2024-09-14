@@ -1,0 +1,120 @@
+#resume {
+    background: url("../../assets/img/wave2_bg.png") no-repeat center;
+    .heading {
+        color: $color-white;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        .resume_tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            .resume_button {
+                display: flex;
+                align-items: center;
+                font-size: $fs-1;
+                font-weight: $fw-bold;
+                color: $color-blue-2;
+                margin: 0 20px;
+                cursor: pointer;
+                &:hover {
+                    color: $color-blue-1;
+                }
+                .resume_button_icon {
+                    &::before {
+                        font-size: $fs-1;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+        .resume_sections {
+            grid-template-columns: 0.5fr;
+        }
+        .resume_data {
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+            column-gap: 1.5rem;
+            .block_content {
+                border: 2px dashed $color-blue-2;
+                width: 100%;
+                padding: 15px;
+                transition: 0.5s;
+                &:hover {
+                    border: 2px solid $color-blue-2;
+                    background: $color-blue-4;
+                    box-shadow: 2px 2px 32px -6px rgba(22, 57, 110, 0.69);
+                    -webkit-box-shadow: 2px 2px 32px -6px rgba(22, 57, 110, 0.69);
+                    -moz-box-shadow: 2px 2px 32px -6px rgba(22, 57, 110, 0.69);
+                }
+            }
+
+            .resume_title {
+                font-size: $fs-1;
+                font-weight: $fw-bold-0;
+                margin: 0 0 18px;
+            }
+            .resume_subtitle {
+                display: inline-block;
+                font-size: $fs-0;
+                margin-bottom: 10px;
+            }
+            .resume_timeline {
+                font-size: $fs-0;
+                color: $color-gray-4;
+            }
+            .text {
+                font-size: $fs-0;
+                color: $color-gray-4;
+            }
+            .resume_rounder {
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+                background: $color-blue-1;
+            }
+            .resume_line {
+                display: block;
+                width: 1px;
+                height: 100%;
+                background: $color-blue-1;
+                transform: translate(6px, -7px);
+            }
+        }
+    }
+}
+
+#resume [data-content] {
+    display: none;
+}
+.resume_active[data-content] {
+    display: block !important;
+}
+.resume_button.resume_active {
+    color: $color-blue-1 !important;
+}
+@include Responsive(MD) {
+    #resume {
+        background: none;
+        .heading {
+            color: $color-background;
+        }
+        .container {
+            .resume_tabs {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .resume_data {
+                .block_content {
+                    padding: 0 ;
+                    border: none ;
+                }
+                .text {
+                    display: none;
+                }
+            }
+        }
+    }
+}

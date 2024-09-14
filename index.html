@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/logo2.PNG" />
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="preloading">
+    <div id="preloader" class="preloader_container animate__animated">
+        <div class="content animate__animated animate__rotateIn">
+
+        </div>
+    </div>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <div class="scrollTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <!-- HEADER -->
+    <header id="header">
+        <a id="logo" href="#home">
+            <img src="./assets/img/logo2.PNG" alt="">
+        </a>
+        <div id="toggle"></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <!-- HOME -->
+    <section id="home" class="scrollspy">
+        <div class="container">
+            <div class="content  animate__animated animate__fadeIn wow animate__delay-4s">
+                <div class="home_data ">
+                    <h2>Hi, I'm Lieu Dung Tri </h2>
+                    <h1> I'm a Front-end Developer</h1>
+                    <p class="home_description">
+                        Have experience in web design and development knowledge
+                        <br>
+                        I have a patience and responsibility for the assigned work. I'm also takes the time to
+                        learn new knowledges and technologies to improve my skills. Hope that I can contribute a part to
+                        the development of your company.
+                    </p>
+
+                    <button class="waves-effect waves-light btn">
+                        <a href="./assets/files/Lieu-Dung-Tri-CV.pdf" download="Lieu-Dung-Tri-CV">Download CV</a>
+                    </button>
+                </div>
+                <div class="right_content  ">
+                    <div class="image">
+                        <img src="/assets/img/portrait.jpg" alt="">
+
+                    </div>
+                    <div class="contact_info">
+                        <h3>Contact Info</h3>
+                        <ul>
+                            <li><span class="info_icon"> <i class="fa-solid fa-location-dot"></i> Address:</span>
+                                <span class="info_text">District 11, Ho Chi Minh</span>
+                            </li>
+                            <li><span class="info_icon"> <i class="fa-solid fa-phone"></i> Phone: </span>
+                                <span class="info_text">0786706790</span>
+                            </li>
+                            <li><span class="info_icon"> <i class="fa-regular fa-envelope"></i> Email: </span>
+                                <span class="info_text">ldtri1811@gmail.com</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="social_content">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/megastar35" style="--clr:#323232" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <div class="tooltip">
+                                    <span>My GitHub</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/dungtri.lieu/" style="--clr:#2374E1" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <div class="tooltip">
+                                    <span>My Facebook</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- RESUME -->
+    <section id="resume" class="scrollspy">
+        <h2 class="heading animate__animated animate__fadeIn delay-2 wow"> My Resume</h2>
+        <div class="container">
+            <div class="resume_tabs animate__animated animate__fadeInLeft  delay-2 wow">
+                <div class="resume_button resume_active" data-target="#education">
+                    <i class="resume_button_icon fa-solid fa-graduation-cap"></i>
+                    Education
+                </div>
+                <div class="resume_button" data-target="#experience">
+                    <i class=" fa-solid fa-briefcase resume_button_icon"></i>
+                    Experience
+                </div>
+            </div>
+            <div class="resume_sections animate__animated animate__fadeInRight delay-6 wow">
+                <div class="resume_content resume_active" data-content id="education">
+                    <!-- Education 1 -->
+                    <div class="resume_data">
+                        <div class="block_content ">
+                            <h3 class="resume_title">Infomation Systerm Major</h3>
+                            <span class="resume_subtitle">Ton Duc Thang University</span>
+                            <div class="resume_timeline">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2015-2020
+                            </div>
+                        </div>
+                        <div>
+                            <span class="resume_rounder"></span>
+                            <span class="resume_line"></span>
+                        </div>
+                        <div></div>
+
+                    </div>
+                    <!-- Education 2 -->
+                    <div class="resume_data">
+                        <div></div>
+                        <div>
+                            <span class="resume_rounder"></span>
+                            <span class="resume_line"></span>
+                        </div>
+                        <div class="block_content">
+                            <h3 class="resume_title">Programming course</h3>
+                            <span class="resume_subtitle">CyberSoft Education Cyenter</span>
+                            <div class="resume_timeline">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2020
+                            </div>
+                            <p class="text">Thinking in programming, solving problem, Java language, OOP</p>
+                        </div>
+                    </div>
+                    <!-- Education 3 -->
+                    <div class="resume_data">
+                        <div class="block_content">
+                            <h3 class="resume_title">Front-end Developer Course</h3>
+                            <span class="resume_subtitle">CyberSoft Education Center </span>
+                            <div class="resume_timeline">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2020
+                            </div>
+                            <p class="text">Basic knowledge of HTML5, CSS3, Boostrap 4, SASS/SCSS, Javascript (ES5/ES6),
+                                Jquery, AJAX, Git, ...</p>
+
+                        </div>
+                        <div>
+                            <span class="resume_rounder"></span>
+                            <span class="resume_line"></span>
+                        </div>
+                        <div></div>
+
+
+                    </div>
+                </div>
+                <div class="resume_content " data-content id="experience">
+                    <!-- Experience 1 -->
+                    <div class="resume_data ">
+                        <div class="block_content">
+                            <h3 class="resume_title">Booking Movie ticket</h3>
+                            <span class="resume_subtitle">CyberSoft Academy</span>
+                            <div class="resume_timeline">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2020
+                            </div>
+                        </div>
+                        <div>
+                            <span class="resume_rounder"></span>
+                            <span class="resume_line"></span>
+                        </div>
+                    </div>
+                    <!-- Experience 2 -->
+                    <div class="resume_data">
+                        <div></div>
+                        <div>
+                            <span class="resume_rounder"></span>
+                            <span class="resume_line"></span>
+                        </div>
+                        <div class="block_content">
+                            <h3 class="resume_title">Portfolio</h3>
+                            <span class="resume_subtitle">Personal Project</span>
+                            <div class="resume_timeline">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                2020
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SKILL -->
+    <section id="skill" class="scrollspy">
+        <h2 class="heading animate__animated animate__fadeIn delay-4 wow"> Skills </h2>
+        <div class="container">
+            <div class="skill_content">
+                <ul>
+                    <li class="animate__animated animate__fadeInLeft  delay-4 wow">
+                        <div class="skillBar">
+                            <div class="skillName ">
+                                <span>HTML/CSS</span>
+                            </div>
+
+                            <div class="skillItem ">
+
+                                <div class="item">
+                                    <img src="./assets/img/html5_logo.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/CSS3_logo.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/Sass_logo.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/Bootstrap_logo.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <span class="skill_text">Responsive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animate__animated  animate__fadeInLeft delay-5 wow">
+                        <div class="skillBar">
+                            <div class="skillName ">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skillItem ">
+                                <div class="item">
+                                    <span class="skill_text">ES5/ES6</span>
+                                </div>
+                                <div class="item">
+                                    <span class="skill_text">RESTful API</span>
+                                </div>
+                                <div class="item">
+                                    <span class="skill_text">Axios</span>
+                                </div>
+                                <div class="item">
+                                    <span class="skill_text">AJAX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animate__animated  animate__fadeInLeft delay-6 wow">
+                        <div class="skillBar">
+                            <div class="skillName ">
+                                <span>ReactJs</span>
+                            </div>
+                            <div class="skillItem ">
+                                <div class="item">
+                                    <span class="skill_text">ReactJs Basic</span>
+                                </div>
+                                <div class="item">
+                                    <span class="skill_text">Router</span>
+                                </div>
+                                <div class="item">
+                                    <span class="skill_text">Redux</span>
+                                </div>
+                                <div class="item">
+                                    <span class="skill_text">React Hooks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animate__animated  animate__fadeInLeft delay-8 wow">
+                        <div class="skillBar">
+                            <div class="skillName ">
+                                <span>Git</span>
+                            </div>
+                            <div class="skillItem ">
+                                <div class="item">
+                                    <span class="skill_text">Git basic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animate__animated  animate__fadeInLeft delay-10 wow">
+                        <div class="skillBar">
+                            <div class="skillName ">
+                                <span>Languages</span>
+                            </div>
+                            <div class="skillItem ">
+                                <div class="item item_long">
+                                    <span class="skill_text"> English Toeic 690 (4/2019)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="animate__animated  animate__fadeInLeft delay-12 wow">
+                        <div class="skillBar">
+                            <div class="skillName ">
+                                <span>Soft Skills</span>
+                            </div>
+                            <div class="skillItem ">
+                                <div class="item item_long">
+                                    <span class="skill_text">Self study</span>
+                                </div>
+                                <div class="item item_long">
+                                    <span class="skill_text">Teamwork</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill_content_moblie ">
+                <ul class="collapsible">
+                    <li class=" skillBar animate__animated  animate__fadeInLeft delay-4 wow">
+                        <div class="skillName collapsible-header">
+                            <span class="">HTML/CSS</span>
+                        </div>
+                        <div class="skillItem collapsible-body">
+                            <span class="item">
+                                <img src="./assets/img/html5_logo.png" alt="">
+                            </span>
+                            <span class="item">
+                                <img src="./assets/img/CSS3_logo.png" alt="">
+                            </span>
+                            <span class="item">
+                                <img src="./assets/img/Sass_logo.png" alt="">
+                            </span>
+                            <span class="item">
+                                <img src="./assets/img/Bootstrap_logo.png" alt="">
+                            </span>
+                            <span class="item">
+                                <span class="skill_text">Responsive</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="skillBar animate__animated  animate__fadeInLeft delay-5 wow">
+                        <div class="skillName collapsible-header">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skillItem collapsible-body">
+                            <div class="item">
+                                <span class="skill_text">ES5/ES6</span>
+                            </div>
+                            <div class="item">
+                                <span class="skill_text">RESTful API</span>
+                            </div>
+                            <div class="item">
+                                <span class="skill_text">Axios</span>
+                            </div>
+                            <div class="item">
+                                <span class="skill_text">AJAX</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="skillBar animate__animated  animate__fadeInLeft delay-6 wow">
+                        <div class="skillName collapsible-header">
+                            <span>ReactJs</span>
+                        </div>
+                        <div class="skillItem collapsible-body">
+                            <div class="item">
+                                <span class="  skill_text">ReactJs Basic</span>
+                            </div>
+                            <div class="item">
+                                <span class=" skill_text">Router</span>
+                            </div>
+                            <div class="item">
+                                <span class=" skill_text">Redux</span>
+                            </div>
+                            <div class="item">
+                                <span class=" skill_text">React Hooks</span>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="skillBar animate__animated  animate__fadeInLeft delay-8 wow">
+                        <div class="skillName collapsible-header">
+                            <span>Git</span>
+                        </div>
+                        <div class="skillItem collapsible-body">
+                            <div class="item">
+                                <span class="skill_text">Git basic</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="skillBar animate__animated  animate__fadeInLeft delay-10 wow">
+                        <div class="skillName collapsible-header">
+                            <span>Languages</span>
+                        </div>
+                        <div class="skillItem collapsible-body">
+                            <div class="item item_long">
+                                <span class="skill_text"> English Toeic 690 (4/2019)</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="skillBar animate__animated  animate__fadeInLeft delay-10 wow">
+                        <div class="skillName collapsible-header ">
+                            <span>Soft Skills</span>
+                        </div>
+                        <div class="skillItem collapsible-body">
+                            <div class="item item_long">
+                                <span class="skill_text">Self study</span>
+                            </div>
+                            <div class="item item_long">
+                                <span class="skill_text">Teamwork</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!-- PORTPOLIO -->
+    <section id="portfolio" class="scrollspy">
+        <h2 class="heading"> Portfolio </h2>
+        <div class="container">
+            <div class="portfolio_content swiper ">
+                <div class="swiper-wrapper animate__animated animate__fadeInUp delay-4 wow">
+                    <div class="swiper-slide productCard " id="product1">
+                        <div class="card_img">
+                        </div>
+                        <div class="card_detail">
+                            <h4 class="title">Booking movie ticket</h4>
+                            <p><span class="detail_title">Description:</span> <span>A website for users to choose movies
+                                    and book
+                                    tickets</span>
+                            </p>
+                            <p>
+                                <span class="detail_title">Technologies:</span><span>HTML5, CSS3, Bootstrap 4, ReactJS,
+                                    Redux, Material
+                                    UI,
+                                    Styled-components, Axios</span>
+                            </p>
+                            <div class="btn btn_demo" style="--clr: #ec5252">
+                                <a href="https://tickets-booking-project.netlify.app/" target="_blank">Link demo</a>
+                            </div>
+                            <div class="btn btn_github" style="--clr:#000 ">
+                                <a href="https://tickets-booking-project.netlify.app/" target="_blank">Link Github</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide productCard " id="product2">
+                        <div class="card_img">
+                        </div>
+                        <div class="card_detail">
+                            <h4 class="title">Portfolio</h4>
+                            <p><span class="detail_title">Description:</span> <span>My portfolio where have my
+                                    information and my project</span>
+                            </p>
+                            <p>
+                                <span class="detail_title">Technologies:</span><span>HTML5, CSS3, JavaScript, SASS/SCSS,
+                                    Swiper,
+                                    Materialize CSS, Animate </span>
+                            </p>
+                            <div class="btn btn_demo" style="--clr: #ec5252">
+                                <a href="https://ldtri-portfolio.netlify.app/" target="_blank">Link Demo</a>
+                            </div>
+                            <div class="btn btn_github" style="--clr:#000 ">
+                                <a href="https://github.com/megastar35/Portfolio.git" target="_blank">Link Github</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Slider button -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="scrollspy">
+        <h2 class="heading animate__animated animate__fadeInLeft delay-3 wow">Contact me</h2>
+        <div class="container">
+            <div class="contact_content">
+                <div class="contactInfo  animate__animated animate__fadeInLeft delay-4 wow">
+                    <h3 class=" ">Contact info</h3>
+                    <div class="contactInfoBox">
+                        <div class="box">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <div class="text">
+                                <p>Email</p>
+                                <a href="#">
+                                    <span>ldtri1811@gmail.com</span>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="text">
+                                <p>Phone</p>
+                                <a href="#">
+                                    <span>0786706790</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon"><i class="fa-solid fa-location-dot"></i></i></div>
+                            <div class="text">
+                                <p>Address</p>
+                                <a href="https://goo.gl/maps/Ry3bZ1ZCPS1MviNT6" target="_blank">
+                                    <span>District 11, Ho Chi Minh</span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBox  animate__animated animate__fadeInLeft delay-4 wow">
+                    <h3>Send Message</h3>
+                    <form action="" method="post" enctype="text/plain">
+                        <div class="inputBox">
+                            <input type="text" id="input_name" name="name" required="required">
+                            <span>Full Name</span>
+                            <p class="error" id="name_error"></p>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" id="input_email" name="email" required="required">
+                            <span>Email</span>
+                            <p class="error" id="email_error"></p>
+                        </div>
+                        <div class="inputBox">
+                            <textarea id="input_message" name="message" required="required"></textarea>
+                            <span>Your Message...</span>
+                            <p class="error" id="message_error"></p>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- MATERIALIZE JS -->
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/materialize_initial.js"></script>
+    <!-- Back to top button -->
+    <script src="./js/backToTop.js"></script>
+    <!-- VALIDATION JS -->
+    <script src="./js/validation.js"></script>
+    <!-- SWIPER -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- WOW -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

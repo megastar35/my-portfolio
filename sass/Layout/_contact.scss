@@ -1,0 +1,96 @@
+#contact {
+    position: relative;
+    background: $color-background;
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    .contact_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .contactInfo {
+            h3 {
+                font-size: $fs-3;
+                color: $color-blue-2;
+            }
+
+        }
+        .formBox {
+            background: $color-white;
+            padding: 10px 20px;
+            h3 {
+                font-size: $fs-3;
+                margin-bottom: 10px;
+                color: $color-blue-2;
+
+            }
+            .inputBox {
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+                input,
+                textarea {
+                    width: 100%;
+                    color: black;
+                    background: white;
+                    padding: 5px 0;
+                    font-size: $fs-1;
+                    margin: 10px 0;
+                    border: none;
+                    border-bottom: 2px solid $color-blue-2;
+                    outline: none;
+                    resize: none;
+
+                    &:focus ~ span,
+                    &:valid ~ span {
+                        color: $color-purple;
+                        font-size: $fs-1 - 4;
+                        transform: translateY(-25px);
+                    }
+                }
+                input[type="submit"] {
+                    width: 200px;
+                    border: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    font-size: $fs-1;
+                    color: $color-blue-2;
+                    background: $color-background;
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+                span {
+                    position: absolute;
+                    left: 0;
+                    font-size: 16px;
+                    margin: 15px 0 ;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: $color-blue-2;
+                }
+                .error{
+                    color: $color-red-0;
+                }
+            }
+        }
+    }
+}
+
+@include Responsive(MD) {
+    #contact {
+        .contact_content {
+            flex-direction: column;
+            .contactInfo {
+                margin-bottom: 40px;
+                .contactInfoBox {
+                    .box {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+}
